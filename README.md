@@ -50,7 +50,16 @@ Take a look at the VL53L0X Pinout:
 ![screenshot](assets/images/screenshot1.jpg)
 
 ### Once the library is downloaded, you should be ready to upload the source code (Time-of-Flight-Source.ino) into the IDE.
+#### Flash the code into the microprocessor by clicking the export button. You can now watch the distance change in real time with either the serial plotter or graph.
 
+### Tone Program
+#### Now we can move onto the Python script that allows you to change the pitch of a live tone by changing what distance the ToF sensor is reading.
+1. Download all the following dependencies:
+> sudo pacman -S python-pyserial python-numpy portaudio
+  yay -S python-sounddevice 
+2. Download the main.py file from the repository and open it.
+> **Make sure the Arduino IDE is closed after flashing the code.**
+3. Run the file and you're done. You should now be able to change the pitch of the tone with your hand.
 ## Sources
 ToF explanation: https://www.seeedstudio.com/blog/2020/01/08/what-is-a-time-of-flight-sensor-and-how-does-a-tof-sensor-work/ <br>
 Diagrams: https://electrocredible.com/vl53l0x-arduino-measure-distance-time-of-flight-sensor/ 
