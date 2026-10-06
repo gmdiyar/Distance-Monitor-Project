@@ -11,4 +11,4 @@ We used a VL53L0X time-of-fight sensor and an Arduino Nano to monitor distance i
 ## Hardware
 1. Use the 
 
-![Diagram](/assets/images/diagram.png)
+![diagram1](/assets/images/diagram1.png)
