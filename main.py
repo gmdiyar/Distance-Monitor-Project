@@ -3,7 +3,10 @@ import serial
 import numpy as np
 import sounddevice as sd
 
-PORT = "/dev/ttyUSB0"
+// Linux: PORT = "/dev/ttyUSB0"
+// Windows: PORT = "COM#" where # is the port number.
+// Mac: PORT = "/dev/cu.usbserial-1410" or "/dev/cu.wchusbserial1410"
+
 BAUD = 9600
 
 MIN_DIST, MAX_DIST = 30, 600
@@ -14,7 +17,7 @@ ser = serial.Serial(PORT, BAUD, timeout=0.1)
 
 freq = MIN_FREQ
 cur_freq = MIN_FREQ
-volume = 0.0
+volume = 1.0
 phase = 0.0
 
 def callback(outdata, frames, time, status):
